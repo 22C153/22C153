@@ -1,0 +1,31 @@
+name: shield_app
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.1  # State management
+  flutter_sound: ^9.16.0  # For audio functionalities
+  speech_to_text: ^7.0.0  # For speech-to-text capabilities
+  geolocator: ^10.0.0  # For getting the location
+  permission_handler: ^10.2.0  # To request location permissions
+  url_launcher: ^6.0.20  # For sharing via SMS (or other means)
+  cupertino_icons: ^1.0.8  # For iOS style icons
+  google_maps_flutter: ^2.2.0  # Google Maps integration
+  location: ^6.0.2  # Use this line for GPS features, updated for compatibility
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/logo.jpeg  # Ensure the logo asset is correctly referenced
